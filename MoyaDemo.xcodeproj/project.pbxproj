@@ -16,6 +16,7 @@
 		9ACC31F9229A61ED00C9B3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ACC31F7229A61ED00C9B3E0 /* LaunchScreen.storyboard */; };
 		9ACC3204229A61ED00C9B3E0 /* MoyaDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC3203229A61ED00C9B3E0 /* MoyaDemoTests.swift */; };
 		9ACC320F229A61ED00C9B3E0 /* MoyaDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC320E229A61ED00C9B3E0 /* MoyaDemoUITests.swift */; };
+		9ACC321F229A657A00C9B3E0 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC321E229A657A00C9B3E0 /* LoginService.swift */; };
 		BB89DDEF3E135FBA187FBD96 /* Pods_MoyaDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDA8FFEDA1105C20B0091FB /* Pods_MoyaDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		9ACC320A229A61ED00C9B3E0 /* MoyaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoyaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACC320E229A61ED00C9B3E0 /* MoyaDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoUITests.swift; sourceTree = "<group>"; };
 		9ACC3210229A61ED00C9B3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ACC321E229A657A00C9B3E0 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		ECD8A46E87199BE6ABB8BBC9 /* Pods-MoyaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaDemo.debug.xcconfig"; path = "Target Support Files/Pods-MoyaDemo/Pods-MoyaDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 			children = (
 				9ACC31EE229A61ED00C9B3E0 /* AppDelegate.swift */,
 				9ACC31F0229A61ED00C9B3E0 /* ViewController.swift */,
+				9ACC321E229A657A00C9B3E0 /* LoginService.swift */,
 				9ACC31F2229A61ED00C9B3E0 /* Main.storyboard */,
 				9ACC31F5229A61ED00C9B3E0 /* Assets.xcassets */,
 				9ACC31F7229A61ED00C9B3E0 /* LaunchScreen.storyboard */,
@@ -388,6 +391,7 @@
 			files = (
 				9ACC31F1229A61ED00C9B3E0 /* ViewController.swift in Sources */,
 				9ACC31EF229A61ED00C9B3E0 /* AppDelegate.swift in Sources */,
+				9ACC321F229A657A00C9B3E0 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
