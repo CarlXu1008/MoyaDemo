@@ -9,15 +9,14 @@
 import Foundation
 import Moya
 
-let loginProvider = MoyaProvider<LoginServiceAPI>()
+let UserInfoProvider = MoyaProvider<UserInfoServiceAPI>()
 
-
-enum LoginServiceAPI {
-    case Login(userName: String, passwd: String)
-    case Register(userName: String, passwd: String)
+enum UserInfoServiceAPI {
+    case getUserInfo(userName: String, age: Int)
+    case updateUserInfo(userName: String, age: Int)
 }
 
-extension LoginServiceAPI: TargetType {
+extension UserInfoServiceAPI: TargetType {
     
     var baseURL: URL {
         return URL(string: "https://www.myapp.com")!
@@ -25,37 +24,37 @@ extension LoginServiceAPI: TargetType {
     
     var path: String {
         switch self {
-        case .Login:
+        case .getUserInfo:
             return "/login"
-        case .Register:
+        case .updateUserInfo:
             return "/register"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .Login:
+        case .getUserInfo:
             return .get
-        case .Register:
+        case .updateUserInfo:
             return .post
         }
     }
     
     var sampleData: Data {
         switch self {
-        case .Login:
-            return "{\"data\":{\"id\":\"your_new_gif_id\"},\"meta\":{\"status\":200,\"msg\":\" Login OK\"}}".data(using: String.Encoding.utf8)!
-        case .Register:
-            return "{\"data\":{\"id\":\"your_new_gif_id\"},\"meta\":{\"status\":200,\"msg\":\"rigester OK\"}}".data(using: String.Encoding.utf8)!
+        case .getUserInfo:
+            return "{\"data\":{\"name\":\"Carl\"},\"meta\":{\"status\":200,\"msg\":\"  OK\"}}".data(using: String.Encoding.utf8)!
+        case .updateUserInfo:
+            return "{\"data\":{\"name\":\"Xu\"},\"meta\":{\"status\":200,\"msg\":\" OK\"}}".data(using: String.Encoding.utf8)!
         }
     }
     
     var task: Task {
         switch self {
-        case let .Login(userName, passwd):
-            return .requestParameters(parameters: ["userName" : userName, "passwd": passwd], encoding: URLEncoding.default)
-        case .Register(let userName, let passwd):
-            return .requestParameters(parameters: ["userName" : userName, "passwd": passwd], encoding: URLEncoding.default)
+        case let .getUserInfo(userName, age):
+            return .requestParameters(parameters: ["userName" : userName, "age": age], encoding: URLEncoding.default)
+        case .updateUserInfo(let userName, let age):
+            return .requestParameters(parameters: ["userName" : userName, "age": age], encoding: URLEncoding.default)
         }
     }
     

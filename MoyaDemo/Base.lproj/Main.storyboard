@@ -1,24 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iXk-fP-u4X">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--我的-->
+        <scene sceneID="KJN-uV-aix">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="5Dw-JI-zaP" customClass="MineViewController" customModule="MoyaDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l7k-qx-LdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sgL-1w-UAt"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="我的" id="3Ht-uk-dOJ"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MhB-Vk-UXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-136" y="-239"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="pHx-b2-cvN">
+            <objects>
+                <viewController id="pmU-43-CvK" customClass="HomeViewController" customModule="MoyaDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kG5-Id-RKu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="n7u-fO-KR3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="首页" id="xfN-ff-Fmf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zH5-lj-g0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="-1067"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="Ady-Lu-6zr">
+            <objects>
+                <tableViewController id="NAq-3v-hJV" customClass="CourseViewController" customModule="MoyaDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZmR-3v-FyE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="KWj-Jx-zSN">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KWj-Jx-zSN" id="ULB-Un-6Co">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NAq-3v-hJV" id="vSN-wf-pqr"/>
+                            <outlet property="delegate" destination="NAq-3v-hJV" id="jXL-E5-eqN"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="RFQ-zn-wwx">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Zen" id="G6s-dR-0m8">
+                                <connections>
+                                    <action selector="zenWasPressed:" destination="NAq-3v-hJV" id="dhs-2n-I4Q"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Giphy" id="5c3-6y-ZXB">
+                                <connections>
+                                    <action selector="giphyWasPressed:" destination="NAq-3v-hJV" id="gUK-Dk-Nrn"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Download" id="gfl-jN-50l">
+                                <connections>
+                                    <action selector="downloadWasPressed:" destination="NAq-3v-hJV" id="pCn-HV-AFX"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="qnG-nD-eSo">
+                            <connections>
+                                <action selector="searchWasPressed:" destination="NAq-3v-hJV" id="iyd-gS-NzC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sq9-MV-vQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-849" y="-1265"/>
+        </scene>
+        <!--课程-->
+        <scene sceneID="J53-HY-XFg">
+            <objects>
+                <navigationController id="VH7-2v-lDS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="课程" id="toF-38-hzu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w76-gN-KGk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NAq-3v-hJV" kind="relationship" relationship="rootViewController" id="Y7T-w1-S9J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mph-0Z-etH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1577" y="-1266"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ejk-wF-qAp">
+            <objects>
+                <tabBarController id="iXk-fP-u4X" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mq6-yO-vqF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="pmU-43-CvK" kind="relationship" relationship="viewControllers" id="rJm-tY-4DI"/>
+                        <segue destination="VH7-2v-lDS" kind="relationship" relationship="viewControllers" id="zLI-mi-PXM"/>
+                        <segue destination="5Dw-JI-zaP" kind="relationship" relationship="viewControllers" id="0e9-KF-V7P"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q0z-Lg-QnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1300" y="-277"/>
         </scene>
     </scenes>
 </document>

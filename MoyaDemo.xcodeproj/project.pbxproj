@@ -9,8 +9,14 @@
 /* Begin PBXBuildFile section */
 		0010E2DA86444802B47FB185 /* Pods_MoyaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2973BD6839272636E48CB194 /* Pods_MoyaDemo.framework */; };
 		661082698942A361AECC1457 /* Pods_MoyaDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E36F155E6A7AA23F24B43E /* Pods_MoyaDemoUITests.framework */; };
+		9A677EFD229EC40B00FBE4C9 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A677EFC229EC40B00FBE4C9 /* UserService.swift */; };
+		9A677F01229EC71400FBE4C9 /* GitHubUserContentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A677EFE229EC71300FBE4C9 /* GitHubUserContentAPI.swift */; };
+		9A677F02229EC71400FBE4C9 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A677EFF229EC71300FBE4C9 /* GitHubAPI.swift */; };
+		9A677F03229EC71400FBE4C9 /* GiphyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A677F00229EC71300FBE4C9 /* GiphyAPI.swift */; };
+		9A677F0C229EC86000FBE4C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A677F0B229EC86000FBE4C9 /* HomeViewController.swift */; };
+		9A677F0E229EC86C00FBE4C9 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A677F0D229EC86C00FBE4C9 /* CourseViewController.swift */; };
+		9A677F10229EC87600FBE4C9 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A677F0F229EC87600FBE4C9 /* MineViewController.swift */; };
 		9ACC31EF229A61ED00C9B3E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC31EE229A61ED00C9B3E0 /* AppDelegate.swift */; };
-		9ACC31F1229A61ED00C9B3E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC31F0229A61ED00C9B3E0 /* ViewController.swift */; };
 		9ACC31F4229A61ED00C9B3E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ACC31F2229A61ED00C9B3E0 /* Main.storyboard */; };
 		9ACC31F6229A61ED00C9B3E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ACC31F5229A61ED00C9B3E0 /* Assets.xcassets */; };
 		9ACC31F9229A61ED00C9B3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ACC31F7229A61ED00C9B3E0 /* LaunchScreen.storyboard */; };
@@ -46,9 +52,15 @@
 		422957D895A081FFB11FA68F /* Pods-MoyaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaDemo.release.xcconfig"; path = "Target Support Files/Pods-MoyaDemo/Pods-MoyaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		56CFA9A0D4645090D75E39D2 /* Pods-MoyaDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaDemoTests.release.xcconfig"; path = "Target Support Files/Pods-MoyaDemoTests/Pods-MoyaDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		77E36F155E6A7AA23F24B43E /* Pods_MoyaDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoyaDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A677EFC229EC40B00FBE4C9 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		9A677EFE229EC71300FBE4C9 /* GitHubUserContentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubUserContentAPI.swift; sourceTree = "<group>"; };
+		9A677EFF229EC71300FBE4C9 /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		9A677F00229EC71300FBE4C9 /* GiphyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyAPI.swift; sourceTree = "<group>"; };
+		9A677F0B229EC86000FBE4C9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9A677F0D229EC86C00FBE4C9 /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		9A677F0F229EC87600FBE4C9 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		9ACC31EB229A61ED00C9B3E0 /* MoyaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoyaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACC31EE229A61ED00C9B3E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9ACC31F0229A61ED00C9B3E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9ACC31F3229A61ED00C9B3E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9ACC31F5229A61ED00C9B3E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ACC31F8229A61ED00C9B3E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -130,8 +142,14 @@
 			isa = PBXGroup;
 			children = (
 				9ACC31EE229A61ED00C9B3E0 /* AppDelegate.swift */,
-				9ACC31F0229A61ED00C9B3E0 /* ViewController.swift */,
+				9A677F0B229EC86000FBE4C9 /* HomeViewController.swift */,
+				9A677F0D229EC86C00FBE4C9 /* CourseViewController.swift */,
+				9A677F0F229EC87600FBE4C9 /* MineViewController.swift */,
 				9ACC321E229A657A00C9B3E0 /* LoginService.swift */,
+				9A677EFC229EC40B00FBE4C9 /* UserService.swift */,
+				9A677F00229EC71300FBE4C9 /* GiphyAPI.swift */,
+				9A677EFF229EC71300FBE4C9 /* GitHubAPI.swift */,
+				9A677EFE229EC71300FBE4C9 /* GitHubUserContentAPI.swift */,
 				9ACC31F2229A61ED00C9B3E0 /* Main.storyboard */,
 				9ACC31F5229A61ED00C9B3E0 /* Assets.xcassets */,
 				9ACC31F7229A61ED00C9B3E0 /* LaunchScreen.storyboard */,
@@ -389,9 +407,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ACC31F1229A61ED00C9B3E0 /* ViewController.swift in Sources */,
+				9A677F01229EC71400FBE4C9 /* GitHubUserContentAPI.swift in Sources */,
+				9A677F02229EC71400FBE4C9 /* GitHubAPI.swift in Sources */,
+				9A677F0E229EC86C00FBE4C9 /* CourseViewController.swift in Sources */,
+				9A677EFD229EC40B00FBE4C9 /* UserService.swift in Sources */,
+				9A677F0C229EC86000FBE4C9 /* HomeViewController.swift in Sources */,
+				9A677F03229EC71400FBE4C9 /* GiphyAPI.swift in Sources */,
 				9ACC31EF229A61ED00C9B3E0 /* AppDelegate.swift in Sources */,
 				9ACC321F229A657A00C9B3E0 /* LoginService.swift in Sources */,
+				9A677F10229EC87600FBE4C9 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
