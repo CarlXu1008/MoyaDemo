@@ -14,20 +14,13 @@ class MineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        // Do any additional setup after loading the view
-//        loginProvider.request(LoginServiceAPI.Login(userName: "Carl", passwd: "110")) { (result) in
-//            switch result {
-//            case .success(let value):
-//                print("success:\(value.statusCode)")
-//                let dataStr = String.init(data: value.data, encoding: String.Encoding.utf8)
-//                print("success: \(dataStr ?? "")")
-//                break
-//            case .failure(let error):
-//                print("failure: \(error)")
-//                break
-//            }
-//        }
+        pluginsProviderDemo()
+        multiProviderDemo()
+    }
+    
+    
+    /// 插件用法举例
+    func pluginsProviderDemo()  {
         let myPlugin = NetworkActivityPlugin.init { (changeType, loginProvider) in
             switch changeType {
             case .began:
@@ -47,18 +40,20 @@ class MineViewController: UIViewController {
                 break
             }
         }
-
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    /// MultiTarget用法举例
+    func multiProviderDemo()  {
+        let commonProvide = MoyaProvider<MultiTarget>()
+        commonProvide.request(MultiTarget(LoginServiceAPI.Login(userName: "", passwd: ""))) { (result) in
+            
+        }
+        commonProvide.request(MultiTarget(GitHub.zen)) { (result) in
+            
+        }
     }
-    */
+
+    
 
 }

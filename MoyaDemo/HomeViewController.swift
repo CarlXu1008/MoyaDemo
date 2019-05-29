@@ -17,6 +17,4 @@ class HomeViewController: UIViewController {
     }
     
 
-   
-
 }
